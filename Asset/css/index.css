@@ -1,0 +1,232 @@
+
+
+body{font-family: 'Open Sans', Arial, sans-serif; 
+
+	margin: 0; 
+
+	background-color: rgb(238, 196, 222); 
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 450px;
+  }
+  
+.menu-bar {
+    background-color: #333; /* Background color of the menu bar */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Adjust padding according to your preference */
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Vertically center items */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin from the <h1> */
+}
+
+.menu {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align menu items to the right */
+}
+
+.menu li {
+    margin-left: 20px; /* Adjust spacing between menu items */
+}
+
+.menu li:first-child {
+    margin-left: 0; /* Remove margin from the first menu item */
+}
+
+.menu li a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.main-name{
+    font-size: 35px; /* Adjust size as needed */
+    font-weight: bold;
+    color: #bdf328; /* Or any other font styles */
+    margin: center; /* Push the h3 element to the center */
+       
+}
+
+.container{
+    display: flex;
+    align-items: center;     /* Position image on the center */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    
+}
+
+.container span {
+    flex: 1; /* Make spans take up equal space */
+    text-align: center; /* Center text within spans */
+    margin: 10px; /* Add margin to create space between elements */
+}
+
+.container img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.main-name {
+    font-size: 10vw; /* Responsive font size based on viewport width */
+    font-weight: bold;
+    color: hsl(226, 64%, 46%);
+    text-align: center; /* Center text */
+}
+
+.moto {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 10vh; /* Set the height of the container to 100% of the viewport height */
+}
+
+.moto div {
+    text-align: center; /* Center the text horizontally */
+    padding: 1em; /* Add padding using em units for spacing */
+}
+
+.moto h1{
+    font-size: 2em; /* Set font size using em units for scalability */
+    text-align: center; /* Center the text horizontally */
+}
+
+.three-squares {
+    display: flex; /* Change display to flex to enable flexbox layout */
+    
+}
+
+.three-squares > div {
+    flex-grow: 1; /* Make each div occupy equal space */
+    flex-basis: 0; /* Ensure each div starts with equal width */
+    margin-right: 10px; /* Add margin between the squares */
+}
+
+.three-squares > div > div {
+    width: 100%; /* Each inner div occupies 100% of the space within its parent */
+    height: 300px;
+    background-size: cover;
+    margin-right: 30px; /* Add space between each div */
+}
+
+.three-squares > div:first-child {
+    margin-left: 15px; /* Add margin to the left for the first div */
+}
+
+.three-squares > div:last-child {
+    margin-right: 15; /* Remove margin from the last square */
+    
+}
+
+ /* width: auto; /* Maintain aspect ratio */
+
+/*
+.square {
+    width: 250px; /*Adjust size as needed *
+    height: 200px; /* Adjust size as needed *
+    margin-right: 20px; /* Adjust spacing between squares 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+*/
+/*
+.square::before {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+*/
+
+.video-player {
+    position: relative;
+    width: 95%;
+    border: 1px solid #ccc; /* Border color */
+}
+
+.video-player iframe {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin-left: 5px;
+}
+/*
+.purpose{
+    
+    font-size: 14px; /* Adjust size as needed /
+    font-weight: bold;
+    color: hwb(249 9% 72%);  Or any other font styles 
+    margin-top: 50px;  Push the h3 element to the center 
+    text-align: justify;  Justify the text 
+    padding: 0 20px;  Add padding to the sides for better readability 
+    display: flex;  Change display to flex to enable flexbox layout 
+    margin: 0;  Remove default margin 
+   
+}
+*/
+
+.purpose {
+        
+    font-weight: bold;
+    color: hwb(249 9% 72%); /* Or any other font styles */
+    text-align: justify; /* Justify the text */
+    padding: 0 20px; /* Add padding to the sides for better readability */
+    margin: 0; /* Remove default margin */
+    
+}
+
+.purpose-description{
+    display: flex;
+    align-items: center;     /* Position image on the center */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    flex-basis: 100%; /* Ensure full width within flex container */
+    
+}   
+
+.purpose-description span {
+    font-size: 2vw; /* Adjust size using viewport units */
+    flex: 1; /* Make spans take up equal space */
+    text-align: center; /* Center text within spans */
+   
+}
+
+
+
+.social-m-uppercase {
+    text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 600px) {/*When screen is bigger place condition*/
+    .purpose {
+        font-size: 15px;
+        font-weight: bold;
+        color: hwb(249 9% 72%); /* Or any other font styles */
+        text-align: justify; /* Justify the text */
+        padding: 0 20px; /* Add padding to the sides for better readability */
+        margin: 0; /* Remove default margin */
+        
+    }
+    
+    .purpose-description{
+        display: flex;
+        align-items: center;     /* Position image on the center */
+        flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+        flex-basis: 100%; /* Ensure full width within flex container */
+        
+    }   
+}
