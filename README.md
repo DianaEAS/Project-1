@@ -1,11 +1,11 @@
-PARAGRHAPS
+# PARAGRHAPS
 
-PROPOSITO
+## PROPOSITO
 
 ¿Cuál es mi propósito? Mi objetivo es ayudar a miles de personas a escapar de la rutina del 9 a 5. Con mi experiencia y el apoyo de mis mentores, aspiro ayudarte a construir la vida de tus sueños, aprovechando todas las oportunidades que nos brinda la era digital.”
 Recuerda que tu propósito es único y personal. ¡Sigue persiguiendo tus sueños y contribuyendo al bienestar de los demás! 🌟
 
-PRESENTACION
+## PRESENTACION
 
 Hola, Somos Legion
  
