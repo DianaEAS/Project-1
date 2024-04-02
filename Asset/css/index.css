@@ -8,9 +8,14 @@ body{font-family: 'Open Sans', Arial, sans-serif;
 
 	margin: 0; 
 
-	background-color: hsl(0, 23%, 78%); 
+	background-color: rgb(255, 255, 255); 
      /* Set background properties */
     
+}
+
+footer, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -20,7 +25,7 @@ img {
   }
   
 .menu-bar {
-    background-color: #333; /* Background color of the menu bar */
+    background-color: #272323; /* Background color of the menu bar */
     color: #fff; /* Text color */
     padding: 10px 20px; /* Adjust padding according to your preference */
     justify-content: space-between; /* Align items with space between */
@@ -138,6 +143,7 @@ button[type="submit"]:hover {
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     height: 10vh; /* Set the height of the container to 100% of the viewport height */
+    margin: 20px 20px;
 }
 
 .moto div {
@@ -150,9 +156,10 @@ button[type="submit"]:hover {
     text-align: center; /* Center the text horizontally */
 }
 
-.three-squares {
+ /* SQUARE============================================================================ */
+
+ .three-squares {
     display: flex; /* Change display to flex to enable flexbox layout */
-    
 }
 
 .three-squares > div {
@@ -163,7 +170,7 @@ button[type="submit"]:hover {
 
 .three-squares > div > div {
     width: 100%; /* Each inner div occupies 100% of the space within its parent */
-    height: 300px;
+    height: 270px;
     background-size: cover;
     margin-right: 30px; /* Add space between each div */
 }
@@ -173,22 +180,34 @@ button[type="submit"]:hover {
 }
 
 .three-squares > div:last-child {
-    margin-right: 15; /* Remove margin from the last square */
-    
+    margin-right: 15px; /* Corrected syntax: Add px to the value */
 }
 
 .square {
+    position: relative; /* Make the square container relative */
     width: 100%; /* Ensure the square fills its parent container */
     height: 200px; /* Adjust height as needed */
     background-size: cover; /* Ensure the background image covers the container */
     background-position: center; /* Center the background image */
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: white;
+    align-items: flex-end; /* Align items to the bottom */
+    color: rgb(12, 1, 1);
     font-size: 18px;
     text-align: center;
 }
+
+.square span {
+    position: absolute; /* Position the span absolutely */
+    bottom: 10px; /* Adjust the distance from the bottom */
+    left: 50%; /* Move the span to the horizontal center */
+    transform: translateX(-50%); /* Adjust for horizontal centering */
+}
+
+ /* END OF SQUARE=====================================================================*/
+
+
+
 
  /* width: auto; /* Maintain aspect ratio */
 
@@ -231,38 +250,28 @@ button[type="submit"]:hover {
     height: 90%;
     margin-left: 5px;
 }
-/*
-.purpose{
-    
-    font-size: 14px; /* Adjust size as needed /
-    font-weight: bold;
-    color: hwb(249 9% 72%);  Or any other font styles 
-    margin-top: 50px;  Push the h3 element to the center 
-    text-align: justify;  Justify the text 
-    padding: 0 20px;  Add padding to the sides for better readability 
-    display: flex;  Change display to flex to enable flexbox layout 
-    margin: 0;  Remove default margin 
-   
-}
-*/
 
-.purpose {
-        
-    font-weight: bold;
-    color: hwb(249 9% 72%); /* Or any other font styles */
-    text-align: justify; /* Justify the text */
-    padding: 0 20px; /* Add padding to the sides for better readability */
-    margin: 0; /* Remove default margin */
-    
-}
+
 
 .purpose-description{
     display: flex;
     align-items: center;     /* Position image on the center */
     flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
     flex-basis: 100%; /* Ensure full width within flex container */
+    margin: 50px 50px;
     
-}   
+}
+
+.purpose-description h1{
+   
+    font-weight: bold;
+    color: hwb(323 4% 67%); /* Or any other font styles */
+    text-align: center; /* Justify the text */
+    padding: 0 20px; /* Add padding to the sides for better readability */
+    margin: 30px 30px; /* Remove default margin */
+
+    
+}  
 
 .purpose-description span {
     font-size: 2vw; /* Adjust size using viewport units */
@@ -271,11 +280,14 @@ button[type="submit"]:hover {
    
 }
 
-
-
-.social-m-uppercase {
-    text-transform: uppercase;
+.purpose {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: justify; /* Justify the text */
+    padding: 0 20px; /* Add padding to the sides for better readability */
+    margin: 20px 20px; /* Remove default margin */
 }
+
 
 
 @media only screen and (max-width: 600px) {/*When screen is bigger place condition*/
@@ -285,7 +297,7 @@ button[type="submit"]:hover {
         color: hwb(249 9% 72%); /* Or any other font styles */
         text-align: justify; /* Justify the text */
         padding: 0 20px; /* Add padding to the sides for better readability */
-        margin: 0; /* Remove default margin */
+        margin: 20px 20px; /* Remove default margin */
         
     }
     
@@ -294,6 +306,50 @@ button[type="submit"]:hover {
         align-items: center;     /* Position image on the center */
         flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
         flex-basis: 100%; /* Ensure full width within flex container */
-        
+               
     }   
 }
+
+/* Center the content horizontally */
+.social {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Style for social media links */
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for social media icons */
+.social-media a {
+    margin-right: 40px; /* Adjust spacing between icons */
+    display: inline-block; /* Ensure proper alignment */
+    border-radius: 50%; /* Make the icons circular */
+   
+}
+
+/* Adjust the size of social media icons */
+.social-media a img {
+    width: 60px; /* Set maximum width for the icons */
+    height: 60px;
+}
+
+.social-network{
+    
+    font-size: 15px;
+    font-weight: bold;
+    color: hwb(249 9% 72%); /* Or any other font styles */
+    text-align: center; /* Justify the text */
+    padding: 0 20px; /* Add padding to the sides for better readability */
+    margin: 50px 50px; /* Remove default margin */
+
+}
+
