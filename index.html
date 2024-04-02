@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Kathe Sarmiento</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="Asset/css/index.css" rel="stylesheet">
+    
 </head>
+
 <body>
-     
+
+<!-- <body style="background-image: url('Asset/images/blue_n_brown.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+ background-position: center;"</div> -->
+
     <!-- //SECTION 1, include logo, Testimonios y Unete a mi equipo 
     <div class="top-bar">
         <div class="top-bar-content">
@@ -23,6 +30,9 @@
         </div>
     </div> -->
 
+    
+    <!-- //SECTION 1, include logo, Testimonios y Unete a mi equipo 
+    <div class="top-bar" -->
 
     <div class="menu-bar">
         <div class="logo">
@@ -35,12 +45,13 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
-    
+
+      
     <!-- //SECTION 2, include imagen on the left, Kathes Name on the right and moto on the bottom right -->
 
     <div class = container>
         <span>
-            <img src="Asset/Capture.PNG" alt="Authot photo" style="width:100%";>
+            <img src="Asset/images/Author_face.PNG" alt="Author photo" style="width:100%";>
         </span>
          <!-- //Create a Span with WEBName and personalise it with main-name class -->
         <span class = "main-name">
@@ -59,25 +70,34 @@
      
      <!-- //SECTION 3, include 3 frames with each of them containing an image with
     3 business descriptions, such as "Quien soy yo", "Oportunidad de negocio" and ""Nomadas Digitales -->
-    <div class = "three-squares">
+    <!--<div class = "three-squares">
         <div>
-            <div style="background-image: url('Capture.PNG');">
+            <div class="square" style="background-image: url('Asset/images/Who_i_am.PNG');">
                 <span>
                     Quien soy yo
                 </span>
             </div>
         </div>
-        
+    -->
+
+    <!-- //SECTION 3, Should include 3 frames with each of them containing an image with
+    3 business descriptions, such as "Quien soy yo - WHO I AM", "Oportunidad de negocio" BUSINESS OPPORTUNITY and "
+    "Nomadas Digitales DIGITAL NOMADS
+    Initially, we will do only 2 squares because the web client did not have enough infor to fill the
+    WHO I AM part-->
+
+    <div class = "three-squares">  
         <div>
-            <div style="background-image: url('Digital_businesses.jpg');">
+            <div class="square" style="background-image: url('Asset/images/MiamiB.PNG');">
                 <span>
                     Nomadas Digitales
+
                 </span>
             </div>
         </div>
             
         <div>
-            <div style="background-image: url('Business_oportunity.jpg');">
+            <div class="square" style="background-image: url('Asset/images/business_meeting.PNG');">
                 <span>
                     Oportunidad de Negocio
                 </span>
@@ -101,31 +121,41 @@
         </span>
     </div>
 
-     <!-- //SECTION 5, TESTIMONIOS. Insert 3 videos where people give their testimonials -->
+     <!-- //SECTION 5, CONTACT FORMS -->
 
-    <div class = "witness">
-        <div>
-            <span>Testimonio 1</span>
-        </div>
-        <div>
-            <span>Testimonio 2</span>
-        </div>
-
-        <div>
-            <span>Testimonio 1</span>
-        </div>
-        
+     <div class="contact-form">
+        <h2>Contáctame</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
-      <!-- //SECTION 6, CONTACT FORM -->
+   
+      <!-- //SECTION 6, SOCIAL NETWORKS -->
 
       <div>
-        <span>Create contact form</span>
+        <span>Contactame en mis redes sociales</span>
       </div>
 
       <footer class="social-m-uppercase">
 
-		<span>Find us on:</span>
+		<span>Encuéntrame en:</span>
 
 		<a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
 		<a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
