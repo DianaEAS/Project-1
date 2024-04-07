@@ -160,6 +160,7 @@ button[type="submit"]:hover {
 
  .three-squares {
     display: flex; /* Change display to flex to enable flexbox layout */
+    font-size: 20px;
 }
 
 .three-squares > div {
@@ -318,6 +319,7 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 70px;
 }
 
 
@@ -353,3 +355,16 @@ button[type="submit"]:hover {
 
 }
 
+/* STYLE FOR BUSINESS WINDOW============================================================= */
+
+#instagram-link img {
+    display: none;
+}
+
+footer p {
+    margin-bottom: 10px; /* Adjust the value as needed to create the desired space */
+}
+
+footer p {
+    margin-bottom: 10px; /* Adjust the value as needed to create the desired space */
+}
