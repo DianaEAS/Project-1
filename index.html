@@ -5,34 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Kathe Sarmiento</title>
     <link href="Asset/css/index.css" rel="stylesheet">
-    
 </head>
 
 <body>
-
-<!-- <body style="background-image: url('Asset/images/blue_n_brown.jpg');
-background-size: cover;
-background-repeat: no-repeat;
- background-position: center;"</div> -->
-
-    <!-- //SECTION 1, include logo, Testimonios y Unete a mi equipo 
-    <div class="top-bar">
-        <div class="top-bar-content">
-            <div class="logo">
-                <span>Katherin Sarmiento</span>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Testimonios</a></li>
-                    <li><a href="#">Unete a mi equipo</a></li>
-                </ul>
-            </div>
-        </div>
-    </div> -->
-
-    
-    <!-- //SECTION 1, include logo, Testimonios y Unete a mi equipo 
-    <div class="top-bar" -->
+    <!-- //SECTION 1, Menu -->
 
     <div class="menu-bar">
         <div class="logo">
@@ -46,7 +22,7 @@ background-repeat: no-repeat;
     </div>
 
       
-    <!-- //SECTION 2, include imagen on the left, Kathes Name on the right and moto on the bottom right -->
+    <!-- SECTION 2, include imagen on the left, Kathes Name on the right and moto on the bottom right -->
 
     <div class = container>
         <span>
@@ -67,30 +43,12 @@ background-repeat: no-repeat;
         <h1>Creando la vida de mis sueños</h1>
     </div>
      
-     <!-- //SECTION 3, include 3 frames with each of them containing an image with
-    3 business descriptions, such as "Quien soy yo", "Oportunidad de negocio" and ""Nomadas Digitales -->
-    <!--<div class = "three-squares">
-        <div>
-            <div class="square" style="background-image: url('Asset/images/Who_i_am.PNG');">
-                <span>
-                    Quien soy yo
-                </span>
-            </div>
-        </div>
-    -->
-
-    <!-- //SECTION 3, Should include 3 frames with each of them containing an image with
-    3 business descriptions, such as "Quien soy yo - WHO I AM", "Oportunidad de negocio" BUSINESS OPPORTUNITY and "
-    "Nomadas Digitales DIGITAL NOMADS
-    Initially, we will do only 2 squares because the web client did not have enough infor to fill the
-    WHO I AM part-->
-
     <div class = "three-squares">  
         <div>
             <div class="square" style="background-image: url('Asset/images/MiamiB.webp');">
                 
                 <span>
-                    <a href="nomads.html" rel="noopener">Nomadas Digitales </a>
+                    <a href="nomads.html" rel="noopener" style="text-decoration: none; color: #f707ab;">Nómadas Digitales </a>
                 </span>
             </div>
         </div>
@@ -98,17 +56,17 @@ background-repeat: no-repeat;
         <div>
             <div class="square" style="background-image: url('Asset/images/rio_de_janeiro.webp');">
                 <span>
-                    <a href="business.html" rel="noopener">Oportunidad de Negocio</a>
+                    <a href="business.html" rel="noopener" style="text-decoration: none; color: #f707ab;">Oportunidad de Negocio</a>
                 </span>
             </div>
         </div>
     </div>
 
-    <!-- //SECTION 4, VIDEO PRESENTATION: Kathes video and purpose "Proposito" on the right  -->
+    <!--SECTION 3, VIDEO PRESENTATION: Kathes video and purpose "Proposito" on the right  -->
 
     <div class = "purpose-description">
         <span>
-            <h1>Quien soy?</h1>
+            <h1>Quién soy?</h1>
             <p><iframe src="https://www.youtube.com/embed/VJkc_p07OEc?si=6Qxi0Sbt0mQcvVd3" title="YouTube video player" frameborder="0" allowfullscreen></iframe></p>
         </span>
 
@@ -120,81 +78,78 @@ background-repeat: no-repeat;
         </span>
     </div>
 
-     <!-- //SECTION 5, CONTACT FORMS -->
+     <!--SECTION 4, CONTACT FORMS -->
 
-     
      <!-- Container for the contact form -->
-<div id = "contact-form" class="contact-form">
+    <div id = "contact-form" class="contact-form">
     <!-- Title for the contact form -->
-    <h2>Contáctame</h2>
+        <h2>Contáctame</h2>
     
-    <!-- Form element for collecting user input
-    Action form, will be submitted to the same page (current URL) 
-        Method post, appends form-data inside the body of the HTTP request (data is not shown in URL)-->
-    <form action="#" method="post">
+        <!-- Form element for collecting user input
+        Action form, will be submitted to the same page (current URL) 
+            Method post, appends form-data inside the body of the HTTP request (data is not shown in URL)-->
+        <form action="#" method="post">
         <!-- Form group for the name input field -->
-        <div class="form-group">
-            <!-- Label for the name input field -->
-            <label for="name">Nombre:</label>
-            <!-- Input field for the user's name -->
-            <input type="text" id="name" name="name" required>
-        </div>
-        
-        <!-- Form group for the phone number input field -->
-        <div class="form-group">
-            <!-- Label for the phone number input field -->
-            <label for="phone">Teléfono:</label>
-            <!-- Input field for the user's phone number -->
-            <input type="tel" id="phone" name="phone">
-        </div>
+            <div class="form-group">
+                <!-- Label for the name input field -->
+                <label for="name">Nombre:</label>
+                <!-- Input field for the user's name -->
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <!-- Form group for the phone number input field -->
+            <div class="form-group">
+                <!-- Label for the phone number input field -->
+                <label for="phone">Teléfono:</label>
+                <!-- Input field for the user's phone number -->
+                <input type="tel" id="phone" name="phone">
+            </div>
         
         <!-- Form group for the email input field -->
-        <div class="form-group">
+             <div class="form-group">
             <!-- Label for the email input field -->
-            <label for="email">Email:</label>
-            <!-- Input field for the user's email address -->
-            <input type="email" id="email" name="email" required>
-        </div>
+                <label for="email">Email:</label>
+                <!-- Input field for the user's email address -->
+                <input type="email" id="email" name="email" required>
+            </div>
         
         <!-- Form group for the message input field -->
-        <div class="form-group">
+            <div class="form-group">
             <!-- Label for the message input field -->
-            <label for="message">Mensaje:</label>
-            <!-- Textarea for the user's message -->
-            <textarea id="message" name="message" required></textarea>
-        </div>
+                <label for="message">Mensaje:</label>
+                <!-- Textarea for the user's message -->
+                <textarea id="message" name="message" required></textarea>
+            </div>
         
         <!-- Submit button for submitting the form -->
-        <button type="submit">Enviar</button>
-    </form>
-</div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 
   
-      <!-- //SECTION 6, SOCIAL NETWORKS -->
-<div class = "social-network">
-    <h4>Sígueme en redes sociales</h4>
-    <div class="social">
+      <!--SECTION 5, SOCIAL MEDIA -->
+    <div class = "social-network">
+        <h4>Sígueme en redes sociales</h4>
+        <div class="social">
                
-        <!-- Social Media Links -->
-        <div class="social-media">
-            <a href="https://www.facebook.com"><img src="Asset/images/facebook_icon.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com"><img src="Asset/images/instagram_icon.png" alt="YouTube"></a>
-            <a href="https://www.youtube.com"><img src="Asset/images/youtube_icon.png" alt="Instagram"></a>
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="https://www.facebook.com"><img src="Asset/images/facebook_icon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com"><img src="Asset/images/instagram_icon.png" alt="YouTube"></a>
+                <a href="https://www.youtube.com"><img src="Asset/images/youtube_icon.png" alt="Instagram"></a>
+            </div>
         </div>
 
-        
-    </div>
-    <footer>
-        <p><a href="nomads.html" rel="noopener">Nomadas Digitales </a></p>
-        <p><a href="business.html" rel="noopener">Oportunidad de Negocio</a></p>
-        
-                 
-        <p>Copyright © 2024 Aguirre | Fulls Stack Web Development BootCamp</p>
-    </footer>
-    </div>
-	
-	
+        <footer>
+            <p><a href="nomads.html" rel="noopener" style="text-decoration: none";>Nómadas Digitales </a></p>
+            <p><a href="business.html" rel="noopener" style="text-decoration: none";>Oportunidad de Negocio</a></p>                  
+                
+        </footer>
 
+        <p class = "author-info">Copyright © 2024 Aguirre | Fulls Stack Web Development BootCamp</p>
+
+    </div>  
+    		
 </body>
 </html>
 

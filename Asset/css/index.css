@@ -19,21 +19,23 @@ footer, h1, h2, h3, p, ul, li {
 }
 
 img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
+   
+    border-radius: 10px;
     width: 450px;
   }
   
 .menu-bar {
-    background-color: #272323; /* Background color of the menu bar */
+    background-color: #423434; /* Background color of the menu bar */
     color: #fff; /* Text color */
-    padding: 10px 20px; /* Adjust padding according to your preference */
+    padding: 20px 10px; /* Adjust padding according to your preference */
     justify-content: space-between; /* Align items with space between */
     align-items: center; /* Vertically center items */
 }
 
 .logo h1 {
-    margin: 0; /* Remove default margin from the <h1> */
+    margin: 10; /* Remove default margin from the <h1> */
+    color: #eb15e0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .menu {
@@ -57,10 +59,11 @@ img {
     text-decoration: none; /* Remove underline from links */
 }
 
-.main-name{
-    font-size: 35px; /* Adjust size as needed */
+.main-name p{
+    font-size: 37px; /* Adjust size as needed */
     font-weight: bold;
-    color: #bdf328; /* Or any other font styles */
+    color: #3120ca; /* Or any other font styles */
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: center; /* Push the h3 element to the center */
        
 }
@@ -153,6 +156,9 @@ button[type="submit"]:hover {
 
 .moto h1{
     font-size: 2em; /* Set font size using em units for scalability */
+    color:hsl(330, 74%, 42%);
+    font-family: 'Segoe Script', cursive, sans-serif;
+    /* Use cursive font followed by fallback fonts */
     text-align: center; /* Center the text horizontally */
 }
 
@@ -193,9 +199,9 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: center;
     align-items: flex-end; /* Align items to the bottom */
-    color: rgb(12, 1, 1);
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
+    border-radius: 10px; /* Adjust the value to control the roundness */
 }
 
 .square span {
@@ -206,38 +212,6 @@ button[type="submit"]:hover {
 }
 
  /* END OF SQUARE=====================================================================*/
-
-
-
-
- /* width: auto; /* Maintain aspect ratio */
-
-/*
-.square {
-    width: 250px; /*Adjust size as needed *
-    height: 200px; /* Adjust size as needed *
-    margin-right: 20px; /* Adjust spacing between squares 
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-*/
-/*
-.square::before {
-   
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-*/
 
 .video-player {
     position: relative;
@@ -252,8 +226,6 @@ button[type="submit"]:hover {
     margin-left: 5px;
 }
 
-
-
 .purpose-description{
     display: flex;
     align-items: center;     /* Position image on the center */
@@ -267,6 +239,7 @@ button[type="submit"]:hover {
    
     font-weight: bold;
     color: hwb(323 4% 67%); /* Or any other font styles */
+    font-size: 30px;
     text-align: center; /* Justify the text */
     padding: 0 20px; /* Add padding to the sides for better readability */
     margin: 30px 30px; /* Remove default margin */
@@ -335,7 +308,7 @@ button[type="submit"]:hover {
     margin-right: 40px; /* Adjust spacing between icons */
     display: inline-block; /* Ensure proper alignment */
     border-radius: 50%; /* Make the icons circular */
-   
+    
 }
 
 /* Adjust the size of social media icons */
@@ -354,8 +327,15 @@ button[type="submit"]:hover {
     margin: 50px 50px; /* Remove default margin */
 
 }
+.author-info{
+    font-size: 12px;
+    color: rgb(196, 164, 132);
+    margin-top: 30px;
 
-/* STYLE FOR BUSINESS WINDOW============================================================= */
+}
+
+
+/* STYLE FOR "NEGOCIOS" BUSINESS WINDOW============================================================= */
 
 #instagram-link img {
     display: none;
@@ -363,8 +343,70 @@ button[type="submit"]:hover {
 
 footer p {
     margin-bottom: 10px; /* Adjust the value as needed to create the desired space */
+    font-size: 24px;
 }
 
-footer p {
-    margin-bottom: 10px; /* Adjust the value as needed to create the desired space */
+
+/* Create a business page section to center elements */
+.business-page {
+    width: 90%; /* Adjust the width as needed */
+    margin: 0 auto; /* Set left and right margins to auto for centering */
+    text-align: center; /* Center-align text content */
+    border-radius: 10px;
 }
+
+.business-page header {
+    background-color: #ffffff; /* Example background color */
+    padding: 10px;
+    
+}
+
+.business-page h1 {
+    color: hsl(227, 68%, 29%);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+.business-page iframe {
+    display: block;
+    width: 100%; /* Make the video width 100% of its container */
+    max-width: 800px; /* Set maximum width for the video */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center the iframe horizontally with some margin */
+}
+
+.business-page p {
+    margin-bottom: 14px; /* Add some space below paragraphs for better readability */
+    font-size: 22px;
+    
+}
+
+.business-page h2{
+    
+    color:hsl(226, 64%, 46%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.business-paragraph{
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.offer{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.join-us p{
+    margin-bottom: 20px; /* Add some space below paragraphs for better readability */
+    font-size: 22px;
+    color:hsl(227, 68%, 29%);
+    font-weight: bold;
+    font-style: italic; /* Add italic style */
+}
+
+
