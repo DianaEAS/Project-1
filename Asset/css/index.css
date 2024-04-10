@@ -1,8 +1,8 @@
-
 /* Author: Diana Aguirre
 Date: March 2024
 Description: provide style for a personal brand related
-to business, investment and travel */
+to business, investment and travel*/
+
 
 body{font-family: 'Open Sans', Arial, sans-serif; 
 
@@ -10,16 +10,20 @@ body{font-family: 'Open Sans', Arial, sans-serif;
 
 	background-color: rgb(255, 255, 255); 
      /* Set background properties */
-    
-}
+    }
+
+.header h1{
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #007bff;
+    }
 
 footer, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-}
+    }
 
 img {
-   
     border-radius: 10px;
     width: 450px;
   }
@@ -30,7 +34,7 @@ img {
     padding: 20px 10px; /* Adjust padding according to your preference */
     justify-content: space-between; /* Align items with space between */
     align-items: center; /* Vertically center items */
-}
+    }
 
 .logo h1 {
     margin: 10; /* Remove default margin from the <h1> */
@@ -44,47 +48,45 @@ img {
     padding: 0;
     display: flex;
     justify-content: flex-end; /* Align menu items to the right */
-}
+    }
 
 .menu li {
     margin-left: 20px; /* Adjust spacing between menu items */
-}
+    }
 
 .menu li:first-child {
     margin-left: 0; /* Remove margin from the first menu item */
-}
+    }
 
 .menu li a {
     color: #fff; /* Link text color */
     text-decoration: none; /* Remove underline from links */
-}
+    }
 
 .main-name p{
     font-size: 37px; /* Adjust size as needed */
     font-weight: bold;
     color: #3120ca; /* Or any other font styles */
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: center; /* Push the h3 element to the center */
-       
-}
+    text-align: center; /* Center text within divs */
+    }
 
 .container{
     display: flex;
     align-items: center;     /* Position image on the center */
     flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    }
 
-  }
-
-.container span {
-    flex: 1; /* Make spans take up equal space */
-    text-align: center; /* Center text within spans */
+.container div {
+    flex: 1; /* Make divs take up equal space */
+    text-align: center; /* Center text within divs */
     margin: 10px; /* Add margin to create space between elements */
-}
+    }
 
 .container img {
     max-width: 100%; /* Ensure image does not exceed container width */
     height: auto; /* Maintain aspect ratio */
-}
+    }
 
 .contact-form {
     max-width: 400px;
@@ -92,21 +94,21 @@ img {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
+    }
 
 
 h2 {
     text-align: center;
-}
+    }
 
 .form-group {
     margin-bottom: 20px;
-}
+    }
 
 label {
     display: block;
     margin-bottom: 5px;
-}
+    }
 
 input[type="text"],
 input[type="tel"],
@@ -117,7 +119,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box; /* Ensures padding and border are included in the width */
-}
+    }
 
 button[type="submit"] {
     width: 100%;
@@ -128,18 +130,18 @@ button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
+    }
 
 button[type="submit"]:hover {
     background-color: #0056b3;
-}
+    }
 
 .main-name {
     font-size: 10vw; /* Responsive font size based on viewport width */
     font-weight: bold;
     color: hsl(226, 64%, 46%);
     text-align: center; /* Center text */
-}
+    }
 
 .moto {
     display: flex;
@@ -147,12 +149,12 @@ button[type="submit"]:hover {
     align-items: center; /* Center items vertically */
     height: 10vh; /* Set the height of the container to 100% of the viewport height */
     margin: 20px 20px;
-}
+    }
 
 .moto div {
     text-align: center; /* Center the text horizontally */
     padding: 1em; /* Add padding using em units for spacing */
-}
+    }
 
 .moto h1{
     font-size: 2em; /* Set font size using em units for scalability */
@@ -160,35 +162,35 @@ button[type="submit"]:hover {
     font-family: 'Segoe Script', cursive, sans-serif;
     /* Use cursive font followed by fallback fonts */
     text-align: center; /* Center the text horizontally */
-}
+    }
 
  /* SQUARE============================================================================ */
 
  .three-squares {
     display: flex; /* Change display to flex to enable flexbox layout */
     font-size: 20px;
-}
+    }
 
 .three-squares > div {
     flex-grow: 1; /* Make each div occupy equal space */
     flex-basis: 0; /* Ensure each div starts with equal width */
     margin-right: 20px; /* Add margin between the squares */
-}
+    }
 
 .three-squares > div > div {
     width: 100%; /* Each inner div occupies 100% of the space within its parent */
     height: 270px;
     background-size: cover;
     margin-right: 30px; /* Add space between each div */
-}
+    }
 
 .three-squares > div:first-child {
     margin-left: 15px; /* Add margin to the left for the first div */
-}
+    }
 
 .three-squares > div:last-child {
     margin-right: 15px; /* Corrected syntax: Add px to the value */
-}
+    }
 
 .square {
     position: relative; /* Make the square container relative */
@@ -202,14 +204,14 @@ button[type="submit"]:hover {
     font-size: 20px;
     text-align: center;
     border-radius: 10px; /* Adjust the value to control the roundness */
-}
+    }
 
-.square span {
-    position: absolute; /* Position the span absolutely */
+.square div {
+    position: absolute; /* Position the div absolutely */
     bottom: 10px; /* Adjust the distance from the bottom */
-    left: 50%; /* Move the span to the horizontal center */
+    left: 50%; /* Move the div to the horizontal center */
     transform: translateX(-50%); /* Adjust for horizontal centering */
-}
+    }
 
  /* END OF SQUARE=====================================================================*/
 
@@ -217,14 +219,14 @@ button[type="submit"]:hover {
     position: relative;
     width: 95%;
     border: 1px solid #ccc; /* Border color */
-}
+    }
 
 .video-player iframe {
     position: relative;
     width: 90%;
     height: 90%;
     margin-left: 5px;
-}
+    }
 
 .purpose-description{
     display: flex;
@@ -232,8 +234,7 @@ button[type="submit"]:hover {
     flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
     flex-basis: 100%; /* Ensure full width within flex container */
     margin: 50px 50px;
-    
-}
+    }
 
 .purpose-description h1{
    
@@ -243,16 +244,13 @@ button[type="submit"]:hover {
     text-align: center; /* Justify the text */
     padding: 0 20px; /* Add padding to the sides for better readability */
     margin: 30px 30px; /* Remove default margin */
+    }  
 
-    
-}  
-
-.purpose-description span {
+.purpose-description div {
     font-size: 2vw; /* Adjust size using viewport units */
-    flex: 1; /* Make spans take up equal space */
-    text-align: center; /* Center text within spans */
-   
-}
+    flex: 1; /* Make divs take up equal space */
+    text-align: center; /* Center text within divs */
+    }
 
 .purpose {
     font-size: 15px;
@@ -260,9 +258,7 @@ button[type="submit"]:hover {
     text-align: justify; /* Justify the text */
     padding: 0 20px; /* Add padding to the sides for better readability */
     margin: 20px 20px; /* Remove default margin */
-}
-
-
+    }
 
 @media only screen and (max-width: 600px) {/*When screen is bigger place condition*/
     .purpose {
@@ -293,29 +289,27 @@ button[type="submit"]:hover {
     justify-content: center;
     align-items: center;
     margin-bottom: 70px;
-}
-
+    }
 
 /* Style for social media links */
 .social-media {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    }
 
 /* Style for social media icons */
 .social-media a {
     margin-right: 40px; /* Adjust spacing between icons */
     display: inline-block; /* Ensure proper alignment */
     border-radius: 50%; /* Make the icons circular */
-    
-}
+    }
 
 /* Adjust the size of social media icons */
 .social-media a img {
     width: 60px; /* Set maximum width for the icons */
     height: 60px;
-}
+    }
 
 .social-network{
     
@@ -325,27 +319,29 @@ button[type="submit"]:hover {
     text-align: center; /* Justify the text */
     padding: 0 20px; /* Add padding to the sides for better readability */
     margin: 50px 50px; /* Remove default margin */
+    }
 
-}
+.social-network h4{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:hsl(226, 64%, 46%)
+    }
+
 .author-info{
     font-size: 12px;
     color: rgb(196, 164, 132);
     margin-top: 30px;
-
-}
-
+    }
 
 /* STYLE FOR "NEGOCIOS" BUSINESS WINDOW============================================================= */
 
 #instagram-link img {
     display: none;
-}
+    }
 
 footer p {
     margin-bottom: 10px; /* Adjust the value as needed to create the desired space */
     font-size: 24px;
-}
-
+    }
 
 /* Create a business page section to center elements */
 .business-page {
@@ -353,19 +349,17 @@ footer p {
     margin: 0 auto; /* Set left and right margins to auto for centering */
     text-align: center; /* Center-align text content */
     border-radius: 10px;
-}
+    }
 
-.business-page header {
+.business-page header{
     background-color: #ffffff; /* Example background color */
     padding: 10px;
-    
-}
+    }
 
 .business-page h1 {
     color: hsl(227, 68%, 29%);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
-}
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
 
 .business-page iframe {
     display: block;
@@ -373,33 +367,31 @@ footer p {
     max-width: 800px; /* Set maximum width for the video */
     height: auto; /* Maintain aspect ratio */
     margin: 20px auto; /* Center the iframe horizontally with some margin */
-}
+    }
 
 .business-page p {
     margin-bottom: 14px; /* Add some space below paragraphs for better readability */
     font-size: 22px;
-    
-}
+    }   
 
 .business-page h2{
     
     color:hsl(226, 64%, 46%);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    }
 
 .business-paragraph{
     text-align: justify;
     margin-top: 20px;
     margin-bottom: 20px;
-
-}
+    }
 
 .offer{
     font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
-}
+    }
 
 .join-us p{
     margin-bottom: 20px; /* Add some space below paragraphs for better readability */
@@ -407,6 +399,12 @@ footer p {
     color:hsl(227, 68%, 29%);
     font-weight: bold;
     font-style: italic; /* Add italic style */
-}
+    }
 
+/* NOMADS PAGE============================================================ */
+
+.values-mision h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
 
