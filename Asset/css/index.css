@@ -37,7 +37,7 @@ img {
     }
 
 .logo h1 {
-    margin: 10; /* Remove default margin from the <h1> */
+    margin: 10px; /* Remove default margin from the <h1> */
     color: #eb15e0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -257,7 +257,8 @@ button[type="submit"]:hover {
     font-weight: bold;
     text-align: justify; /* Justify the text */
     padding: 0 20px; /* Add padding to the sides for better readability */
-    margin: 20px 20px; /* Remove default margin */
+    margin-top: 30px;
+   
     }
 
 @media only screen and (max-width: 600px) {/*When screen is bigger place condition*/
